@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD Operation</title>
+</head>
+<body>
+    
+
+    <section class="container inputgroup">
+        <input type="text" id="productId" autocomplete="off" placeholder="" disabled>
+        <input type="text" id="productName" autocomplete="off" placeholder="Product Name">
+        <input type="text" id="productBrand" autocomplete="off" placeholder="Brand">
+        <input type="text" id="productPrice" autocomplete="off" placeholder="Price">
+
+        <div class="btn-group">
+            <button id="createBtn">Create</button>
+            <button id="updateBtn">Update</button>
+            <button id="deleteAllBtn">Delete All</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>S. no.</th>
+                    <th>Name</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="list">
+                
+            </tbody>
+        </table>
+    </section>
+
+    
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
